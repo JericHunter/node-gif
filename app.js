@@ -7,6 +7,8 @@ const express = require('express');
     "Filter": "high", // "off", "low", "medium", "high", not case sensitive
     "Locale": "en_US", // Your locale here, case-sensitivity depends on input
 });
+// Somewhere near the top
+app.use(express.static('public'));
 
 // App Setup
 const app = express();
